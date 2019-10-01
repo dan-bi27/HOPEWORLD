@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<title>HOPE WORLD</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		body{width: 100vw; height: 100vh; background: url(backhw.jpg); background-size: cover; overflow: hidden; position: absolute;}
+		.icon-wapper{text-align: center; margin-top: 300px;}
+		.icon{ width: 150px; height: 150px; /*background-color: #fff;*/ margin: auto; display: inline-block; margin-right: 30px;  }
+		.thum{width: 150px; height: auto; display: block; margin: auto;}
+		.thum:hover{opacity: 1;}
+
+		#wap2{opacity: 0;}
+		.name1{ /*background-color: #fff;*/}
+		.n1{font-family:'Patua One', cursive; font-size: 2.8em;  margin: 0 10px; display: inline-block; line-height: 100px; background-color: #fff; margin-left: 900px; margin-top: 300px; width: 450px; height:100px; text-align: center; }
+
+		#kk2{width: 150px; height: 150px; position: absolute;}
+		@keyframes ro{
+			to{transform:rotate(-360deg);}
+		}
+		#kk3{width: 200px; height: 200px; position: absolute;}
+		@keyframes ro{
+			to{transform:rotate(360deg);}
+		}
+		#kk4{width: 600px; height: 600px; position: absolute;}
+		@keyframes ro{
+			to{transform:rotate(-180deg);}
+		}
+		#kk5{width: 100px; height: 100px; position: absolute;}
+		@keyframes ro{
+			to{transform:rotate(-360deg);}
+		}
+
+		#wap3{opacity: 0;}
+		.name2{ /*background-color: #fff;*/}
+		.n2{font-family:'Patua One', cursive; font-size: 1em;  margin: 0 10px; display: inline-block; line-height: 100px; background-color: #fff; margin-left: 900px; margin-top: 300px; width: 450px; height:100px; text-align: center; }
+
+		
+
+		
+	</style>
+
+</head>
+<body>
+	<div class="icon-wapper" id="wap">
+
+		<div class="icon">
+			<img src="kiki.png" class="thum" id="kiki">
+		</div>
+
+		<div class="icon">
+			<img src="peace1.png" class="thum" id="peace">
+		</div>
+
+		<div class="icon">
+			<img src="goldfish.png" class="thum" id="goldfish">
+		</div>
+
+		<div class="icon">
+			<img src="kaws.png" class="thum" id="kaws">
+		</div>
+
+		<div class="icon">
+			<img src="hat.png" class="thum" id="hat">
+		</div>
+
+		<div class="icon">
+			<img src="plane.png" class="thum" id="plane">
+		</div>
+
+		<div class="icon">
+			<img src="butterfly.png" class="thum" id="butterfly">
+		</div>
+	</div>
+
+	<div id="wap2">
+		<img src="kk2.png" id="kk2" style="animation: 5s linear 0s infinite normal none running ro; margin-bottom: 400px; left: 60%;">
+
+		<img src="kk3.png" id="kk3" style="animation: 3s linear 0s infinite normal none running ro; top:10%;  left: 60%;">
+
+		<img src="kk4.png" id="kk4" style="animation: 2s linear 0s infinite normal none running ro; top:60%;  left: 10%;">
+
+		<img src="kk5.png" id="kk5" style="animation: 2s linear 0s infinite normal none running ro; top:30%;  left: 80%;">
+
+		<div class="name1">
+			<span class="n1">J-hope - HOPEWORLD</span> 
+		</div>
+
+	</div>
+
+	<div id="wap3">
+		<div class=" name2"> 
+			<span class="n2">J-hope _ P.O.P</span>
+		</div>
+		
+	</div>
+
+		<audio src="hopeworld.mp3" id="hopeworld" loop></audio>
+		<audio src="pop.mp3" id="pop" loop></audio>
+		<audio src="daydream.mp3" id="daydream" loop></audio>
+		<audio src="baseline.mp3" id="baseline" loop></audio>
+		<audio src="hangsang.mp3" id="hangsang" loop></audio>
+		<audio src="airplane.mp3" id="airplane" loop></audio>
+		<audio src="blueside.mp3" id="blueside" loop></audio>
+	
+
+		<script type="text/javascript">
+
+			var kikistate = "off";
+			kiki.onclick = function(){
+				if (kikistate == "off"){
+					hopeworld.play(); kikistate="on";
+					document.body.style.background = "url(rainbow.gif)";
+		 			document.body.style.backgroundSize = "cover";
+		 			peace.style.opacity = "0";
+		 			goldfish.style.opacity = "0";
+		 			kaws.style.opacity = "0";
+		 			hat.style.opacity = "0";
+		 			plane.style.opacity = "0";
+		 			butterfly .style.opacity = "0";
+		 			wap2.style.opacity = "1";
+
+		 
+				}else{
+					hopeworld.pause(); kikistate="off";
+					kiki.style.opacity = "0.4";
+				}
+			}
+
+			var peacestate = "off";
+			peace.onclick = function(){
+				if (peacestate == "off"){
+					pop.play(); peacestate="on";
+					document.body.style.background = "url(deep.gif)";
+		 			document.body.style.backgroundSize = "cover";
+		 			kiki.style.opacity = "0";
+		 			goldfish.style.opacity = "0";
+		 			kaws.style.opacity = "0";
+		 			hat.style.opacity = "0";
+		 			plane.style.opacity = "0";
+		 			butterfly .style.opacity = "0";
+		 			wap2.style.opacity ="0";
+		 			wap3.style.opacity = "1";
+		 
+				}else{
+					pop.pause(); peacestate="off";
+					peace.style.opacity = "0.4";
+				}
+			}
+
+			var goldfishstate = "off";
+			goldfish.onclick = function(){
+				if (goldfishstate == "off"){
+					daydream.play(); goldfishstate="on";
+					document.body.style.background = "url(daydd.gif)";
+		 			document.body.style.backgroundSize = "cover";
+		 			kiki.style.opacity = "0";
+		 			peace.style.opacity = "0";
+		 			goldfish.style.opacity = "1";
+		 			kaws.style.opacity = "0";
+		 			hat.style.opacity = "0";
+		 			plane.style.opacity = "0";
+		 			butterfly .style.opacity = "0";
+		 			
+		 
+				}else{
+					daydream.pause(); goldfishstate="off";
+					goldfish.style.opacity = "0.4";
+				}
+			}
+
+			var kawsstate = "off";
+			kaws.onclick = function(){
+				if (kawsstate == "off"){
+					baseline.play(); kawsstate="on";
+					document.body.style.background = "url(bline.gif)";
+		 			document.body.style.backgroundSize = "cover";
+		 			kiki.style.opacity = "0";
+		 			peace.style.opacity = "0";
+		 			goldfish.style.opacity = "0";
+		 			kaws.style.opacity = "1";
+		 			hat.style.opacity = "0";
+		 			plane.style.opacity = "0";
+		 			butterfly .style.opacity = "0";
+		 			
+				}else{
+					baseline.pause(); kawsstate="off";
+					kaws.style.opacity = "0.4";
+				}
+			}
+
+			var hatstate = "off";
+			hat.onclick = function(){
+				if (hatstate == "off"){
+					hangsang.play(); hatstate="on";
+					document.body.style.background = "url(glitch.gif)";
+		 			document.body.style.backgroundSize = "cover";
+		 			kiki.style.opacity = "0";
+		 			peace.style.opacity = "0";
+		 			goldfish.style.opacity = "0";
+		 			kaws.style.opacity = "0";
+		 			hat.style.opacity = "1";
+		 			plane.style.opacity = "0";
+		 			butterfly .style.opacity = "0";
+				}else{
+					hangsang.pause(); hatstate="off";
+					hat.style.opacity = "0.4";
+				}
+			}
+
+			var planestate = "off";
+			plane.onclick = function(){
+				if (planestate == "off"){
+					airplane.play(); planestate="on";
+					document.body.style.background = "url(air2.gif)";
+		 			document.body.style.backgroundSize = "cover";
+		 			kiki.style.opacity = "0";
+		 			peace.style.opacity = "0";
+		 			goldfish.style.opacity = "0";
+		 			kaws.style.opacity = "0";
+		 			hat.style.opacity = "0";
+		 			plane.style.opacity = "1";
+		 			butterfly .style.opacity = "0";
+
+				}else{
+					airplane.pause(); planestate="off";
+					plane.style.opacity = "0.4";
+				}
+			}
+
+			var butterflystate = "off";
+			butterfly.onclick = function(){
+				if (butterflystate == "off"){
+					blueside.play(); butterflystate="on";
+					document.body.style.background = "url(space.gif)";
+		 			document.body.style.backgroundSize = "cover";
+		 			kiki.style.opacity = "0";
+		 			peace.style.opacity = "0";
+		 			goldfish.style.opacity = "0";
+		 			kaws.style.opacity = "0";
+		 			hat.style.opacity = "0";
+		 			plane.style.opacity = "0";
+		 			butterfly .style.opacity = "1";
+
+				}else{
+					blueside.pause(); butterflystate="off";
+					butterfly.style.opacity = "0.4";
+				}
+			}
+
+
+		</script>
+</body>
+</html>
